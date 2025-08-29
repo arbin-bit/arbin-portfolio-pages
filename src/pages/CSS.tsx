@@ -1,5 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import TechBadge from "@/components/TechBadge";
+import CodeExample from "@/components/CodeExample";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const CSS = () => {
   const concepts = [
@@ -90,6 +92,78 @@ const CSS = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Live CSS Examples */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-center text-foreground">
+            CSS3 Interactive Demonstrations
+          </h2>
+          
+          {/* Flexbox Demo */}
+          <Card className="bg-gradient-card border-border shadow-card mb-8">
+            <CardHeader>
+              <CardTitle className="text-foreground">Flexbox Layout System</CardTitle>
+              <p className="text-muted-foreground">Live example of flexible layout with responsive design</p>
+            </CardHeader>
+            <CardContent>
+              <div className="mb-6 p-6 rounded-lg border border-border bg-gradient-to-r from-blue-500/20 to-purple-500/20">
+                <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
+                  <div className="flex-1 p-4 bg-white/10 rounded backdrop-blur-sm border border-white/20 text-center transition-transform duration-300 hover:transform hover:-translate-y-1 hover:scale-105">
+                    <h4 className="font-semibold text-foreground mb-2">Flex Item 1</h4>
+                    <p className="text-muted-foreground text-sm">This item grows</p>
+                  </div>
+                  <div className="flex-1 p-4 bg-white/10 rounded backdrop-blur-sm border border-white/20 text-center transition-transform duration-300 hover:transform hover:-translate-y-1 hover:scale-105">
+                    <h4 className="font-semibold text-foreground mb-2">Flex Item 2</h4>
+                    <p className="text-muted-foreground text-sm">Equal flexibility</p>
+                  </div>
+                  <div className="flex-1 p-4 bg-white/10 rounded backdrop-blur-sm border border-white/20 text-center transition-transform duration-300 hover:transform hover:-translate-y-1 hover:scale-105">
+                    <h4 className="font-semibold text-foreground mb-2">Flex Item 3</h4>
+                    <p className="text-muted-foreground text-sm">Responsive design</p>
+                  </div>
+                </div>
+              </div>
+
+              <CodeExample
+                title="Flexbox CSS Implementation"
+                description="Complete CSS code for the flexbox layout above"
+                language="css"
+                features={["Flexbox", "Responsive", "Hover Effects"]}
+                code={`.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(to right, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2));
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.flex-item {
+  flex: 1;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flex-item:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}`}
+              />
+            </CardContent>
+          </Card>
         </div>
 
         {/* Projects */}
