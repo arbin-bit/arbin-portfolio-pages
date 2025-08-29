@@ -24,11 +24,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-8">
+          <div className="mb-8 relative">
             <img 
               src={profileImage} 
               alt="Arbin Giri - Full Stack Developer" 
-              className="w-48 h-48 rounded-full mx-auto mb-6 border-4 border-primary shadow-glow"
+              className="object-cover w-48 h-48 rounded-full mx-auto mb-6 border-4 border-primary shadow-glow"
             />
           </div>
           
