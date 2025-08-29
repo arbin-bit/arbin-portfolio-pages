@@ -39,9 +39,6 @@ const ProjectCard = ({ title, description, techs, features, example }: ProjectCa
             <p className="text-muted-foreground italic">{example}</p>
           </div>
         )}
-        <Button variant="outline" className="w-full">
-          View Project Details
-        </Button>
       </CardContent>
     </Card>
   );

@@ -7,36 +7,36 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "arbin.giri@example.com",
-      link: "mailto:arbin.giri@example.com",
+      value: "arbin@trulyiconictech.com",
+      link: "mailto:arbin@trulyiconictech.com",
       color: "text-primary"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone",
-      value: "+977-9800000000",
-      link: "tel:+9779800000000",
+      value: "+977-9845320324",
+      link: "tel:+9779845320324",
       color: "text-tech-fullstack"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/arbingiri",
-      link: "https://linkedin.com/in/arbingiri",
+      value: "linkedin.com/in/arbin-giri",
+      link: "https://linkedin.com/in/arbin-giri",
       color: "text-tech-css"
     },
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "github.com/arbingiri",
-      link: "https://github.com/arbingiri",
+      value: "github.com/arbin-bit",
+      link: "https://github.com/arbin-bit",
       color: "text-foreground"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       label: "Location",
-      value: "Kathmandu, Nepal",
-      link: "https://maps.google.com/?q=Kathmandu,Nepal",
+      value: "Gaindakot, Nepal",
+      link: "https://maps.google.com/?q=Gaindakot,Nepal",
       color: "text-tech-html"
     }
   ];
