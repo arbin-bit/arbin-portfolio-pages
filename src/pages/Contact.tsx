@@ -137,12 +137,12 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-gradient-primary">
-              <a href="mailto:arbin.giri@example.com">
+              <a href="mailto:arbin@trulyiconictech.com">
                 Send Email
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="https://linkedin.com/in/arbingiri" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/arbin-giri" target="_blank" rel="noopener noreferrer">
                 Connect on LinkedIn
               </a>
             </Button>
